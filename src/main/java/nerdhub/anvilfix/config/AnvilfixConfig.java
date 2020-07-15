@@ -24,7 +24,6 @@
 package nerdhub.anvilfix.config;
 
 import com.google.gson.annotations.SerializedName;
-
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.ItemStack;
 
@@ -44,7 +43,7 @@ public class AnvilfixConfig {
     }
 
     public int getEnchantmentLimit(Enchantment enchantment) {
-        return globalEnchantmentLimit > 0 ? globalEnchantmentLimit : enchantment.getMaximumLevel();
+        return globalEnchantmentLimit > 0 ? globalEnchantmentLimit : enchantment.getMaxLevel();
     }
 
     public boolean removeIncrementalCost(ItemStack stack) {
